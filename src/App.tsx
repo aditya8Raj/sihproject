@@ -1,8 +1,10 @@
+import Navbar from "./components/ui/Navbar";
+
 function App() {
   return (
     <>
       <div>
-        <h1 className="underline">VITE + MAGICUI + NEXTUI installed</h1>
+        <Navbar />
       </div>
     </>
   );
