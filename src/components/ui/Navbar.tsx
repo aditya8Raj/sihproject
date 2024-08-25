@@ -10,26 +10,12 @@ import {
 import useMeasure from "react-use-measure";
 import { SearchIcon } from "./SearchIcon";
 import { Input } from "@nextui-org/react";
+import logo from "../../assets/navLogo.png";
 
 const Navbar = () => {
   return (
     <>
       <FlyoutNav />
-
-      <div
-        className="relative min-h-screen"
-        style={{
-          backgroundImage: "url(/imgs/random/12.jpg)",
-
-          backgroundSize: "cover",
-
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-neutral-950/90 to-neutral-950/0" />
-      </div>
-
-      <div className="h-screen bg-neutral-50" />
     </>
   );
 };
@@ -46,14 +32,14 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full px-6 text-white 
+      className={`fixed top-0 z-50 w-full px-6  
   
         transition-all duration-300 ease-out lg:px-12
   
         ${
           scrolled
-            ? "bg-neutral-950 py-3 shadow-xl"
-            : "bg-neutral-950/0 py-6 shadow-none"
+            ? "bg-white py-3 shadow-xl text-black"
+            : "bg-neutral-950/0 py-3 shadow-none "
         }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -61,31 +47,8 @@ const FlyoutNav = () => {
 
         <div className="hidden gap-6 lg:flex ">
           <Links />
-          <div className="relative rounded-lg max-w-full sm:max-w-[10rem] h-10 overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:-z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-12 after:top-3 after:rounded-full after:blur-lg text-white">
-            <Input
-              classNames={{
-                base: "relative bg-transparent ring-0 outline-none border border-neutral-500 text-white placeholder-violet-700 text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block max-w-full sm:max-w-[10rem] h-10 text-center checked:bg-emerald-500",
-                mainWrapper: "h-full",
-              }}
-              placeholder="Type to search..."
-              size="sm"
-              startContent={<SearchIcon size={18} />}
-              type="search"
-            />
-          </div>
-          {/* <Input
-            classNames={{
-              base: "max-w-full sm:max-w-[10rem] h-10 hover:border hover:border-white rounded-md",
-              mainWrapper: "h-full",
-              input: "text-small",
-              inputWrapper:
-                "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
-            }}
-            placeholder="Type to search..."
-            size="sm"
-            startContent={<SearchIcon size={18} />}
-            type="search"
-          /> */}
+          <div className="relative rounded-lg max-w-full sm:max-w-[10rem] h-10 overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:-z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-12 after:top-3 after:rounded-full after:blur-lg text-white"></div>
+
           <CTAs />
         </div>
 
@@ -95,33 +58,10 @@ const FlyoutNav = () => {
   );
 };
 
-const Logo = ({ color = "white" }: { color?: string }) => {
-  // Temp logo from https://logoipsum.com/
-
+const Logo = () => {
   return (
     <div className="flex items-center gap-2">
-      <span className="text-2xl font-bold" style={{ color }}>
-        Placeholder
-      </span>
-
-      <svg
-        width="50"
-        height="39"
-        viewBox="0 0 50 39"
-        fill={color}
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-10"
-      >
-        <path
-          d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
-          stopColor={color}
-        ></path>
-
-        <path
-          d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-          stopColor={color}
-        ></path>
-      </svg>
+      <img src={logo} alt="nav-log" width="230" />
     </div>
   );
 };
@@ -197,13 +137,13 @@ const NavLink = ({
 const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
-      <button className="flex items-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-white transition-colors hover:bg-white hover:text-black">
+      <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-gray-700 transition-colors hover:bg-blue-700 hover:text-white">
         <FaUserCircle />
 
         <span>Sign in</span>
       </button>
 
-      <button className="rounded-lg border-2 border-indigo-300 bg-indigo-300 px-4 py-2 font-semibold text-black transition-colors hover:border-indigo-600 hover:bg-indigo-600 hover:text-white">
+      <button className="rounded-lg border-2 border-blue-700 bg-blue-700 px-4 py-2 font-semibold text-black transition-colors hover:border-blue-900 hover:bg-blue-900 hover:text-white">
         Join for Free
       </button>
     </div>
@@ -215,7 +155,7 @@ const AboutUsContent = () => {
     <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
       <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 lg:col-span-4">
         <div>
-          <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
+          <h2 className="mb-2 text-xl font-semibold text-white">Courses</h2>
 
           <p className="mb-6 max-w-xs text-sm text-neutral-400">
             Placeholder is the world's leading placeholder company.
@@ -324,7 +264,9 @@ const CareersContent = () => {
     <div className="grid w-full grid-cols-12 shadow-xl lg:w-[750px]">
       <div className="col-span-12 flex flex-col justify-between bg-indigo-600 p-6 lg:col-span-4">
         <div className="mb-6">
-          <h2 className="mb-2 text-xl font-semibold text-white">Careers</h2>
+          <h2 className="mb-2 text-xl font-semibold text-white">
+            Career Planing
+          </h2>
 
           <p className="text-sm text-indigo-100">
             Placeholder was rated a top place to work by Placeholder.
@@ -514,8 +456,6 @@ const MobileMenu = () => {
             className="fixed left-0 top-0 flex h-screen w-full flex-col bg-white"
           >
             <div className="flex items-center justify-between p-6">
-              <Logo color="black" />
-
               <button onClick={() => setOpen(false)}>
                 <FiX className="text-3xl text-neutral-950" />
               </button>
@@ -560,7 +500,7 @@ export default Navbar;
 
 const LINKS = [
   {
-    text: "About us",
+    text: "Courses",
 
     href: "#",
 
@@ -568,7 +508,7 @@ const LINKS = [
   },
 
   {
-    text: "Pricing",
+    text: "Resources",
 
     href: "#",
 
@@ -576,7 +516,7 @@ const LINKS = [
   },
 
   {
-    text: "Careers",
+    text: "Career Planing",
 
     href: "#",
 
@@ -584,8 +524,10 @@ const LINKS = [
   },
 
   {
-    text: "Documentation",
+    text: "Upskill",
 
     href: "#",
+
+    component: AboutUsContent,
   },
 ];
