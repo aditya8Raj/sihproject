@@ -67,3 +67,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* fonts */
+.font1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font2 {
+  font-family: "Nunito", sans-serif;
+}
