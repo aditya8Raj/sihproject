@@ -27,20 +27,16 @@ const FlyoutNav = () => {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setScrolled(latest > 250 ? true : false);
+    setScrolled(latest > 50 ? true : false);
   });
 
   return (
     <nav
-      className={`font2 fixed top-0 z-50 w-full px-6  
-  
-        transition-all duration-300 ease-out lg:px-12
-  
-        ${
-          scrolled
-            ? "bg-white py-3 shadow-xl text-black"
-            : "bg-neutral-950/0 py-3 shadow-none "
-        }`}
+      className={`font2 fixed top-0 z-50 w-full px-6 transition-all duration-300 ease-out lg:px-12 ${
+        scrolled
+          ? "bg-white/50 backdrop-blur-md py-3 shadow-xl "
+          : "bg-neutral-950/0 py-3 shadow-none"
+      }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <Logo />
