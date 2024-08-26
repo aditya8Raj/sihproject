@@ -1,11 +1,11 @@
 import { Search } from "lucide-react";
-// import Lottie from "lottie-react";
-// import heroLottie from "../../assets/heroLottie.json";
+import Lottie from "lottie-react";
+import heroLottie from "../../assets/heroLottie.json";
 
 const HeroSection = () => {
   return (
     <>
-      <section className="relative overflow-hidden bg-heroBg text-black">
+      <section className="relative overflow-hidden  text-black">
         <Content />
       </section>
     </>
@@ -38,7 +38,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-        {/* <Lottie animationData={heroLottie} loop={true} /> */}
+        <Lottie animationData={heroLottie} loop={true} />
       </section>
     </div>
   );
