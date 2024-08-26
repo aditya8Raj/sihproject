@@ -16,7 +16,7 @@ const HeroSection = () => {
 
 const Content = () => {
   return (
-    <div className="relative z-20 mx-auto flex max-w-6xl flex-col items-center justify-center px-4 py-24 md:px-8 md:py-36">
+    <div className="relative z-20 mx-auto flex max-w-6xl flex-col items-center justify-center px-4 pt-24 md:px-8 md:pt-24 py-10">
       <section className="w-full px-8 py-3 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
         <div>
           <GlowingChip>✨ Register Yourself Now 🚀</GlowingChip>
