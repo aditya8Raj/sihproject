@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimationProps, motion } from "framer-motion";
 import Navbar from "./components/ui/Navbar";
 import HeroSection from "./components/ui/HeroSection";
+// import AnimatedRibbon from "./components/ui/AnimatedRibbon";
 
 function App() {
   return (
@@ -23,15 +24,27 @@ function App() {
           }}
           className="relative"
         >
-          {/* ALL ELEMENTS HERE */}
-          <HeroSection />
-          <Beams />
+          <div className="relative">
+            <BackgroundWrapper>
+              <HeroSection />
+              {/* <AnimatedRibbon /> */}
+            </BackgroundWrapper>
+            <Beams />
+          </div>
         </motion.div>
-        <GradientGrid />
       </div>
     </>
   );
 }
+
+const BackgroundWrapper = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="relative">
+      {children}
+      <GradientGrid />
+    </div>
+  );
+};
 
 // ---------ANIMATED BEAMS START-----------------
 const Beams = () => {
@@ -42,76 +55,50 @@ const Beams = () => {
   const placements = [
     {
       top: GRID_BOX_SIZE * 0,
-
       left: Math.floor(numColumns * 0.05) * GRID_BOX_SIZE,
-
       transition: {
         duration: 3.5,
-
         repeatDelay: 5,
-
         delay: 2,
       },
     },
-
     {
       top: GRID_BOX_SIZE * 12,
-
       left: Math.floor(numColumns * 0.15) * GRID_BOX_SIZE,
-
       transition: {
         duration: 3.5,
-
         repeatDelay: 10,
-
         delay: 4,
       },
     },
-
     {
       top: GRID_BOX_SIZE * 3,
-
       left: Math.floor(numColumns * 0.25) * GRID_BOX_SIZE,
     },
-
     {
       top: GRID_BOX_SIZE * 9,
-
       left: Math.floor(numColumns * 0.75) * GRID_BOX_SIZE,
-
       transition: {
         duration: 2,
-
         repeatDelay: 7.5,
-
         delay: 3.5,
       },
     },
-
     {
       top: 0,
-
       left: Math.floor(numColumns * 0.7) * GRID_BOX_SIZE,
-
       transition: {
         duration: 3,
-
         repeatDelay: 2,
-
         delay: 1,
       },
     },
-
     {
       top: GRID_BOX_SIZE * 2,
-
       left: Math.floor(numColumns * 1) * GRID_BOX_SIZE - GRID_BOX_SIZE,
-
       transition: {
         duration: 5,
-
         repeatDelay: 5,
-
         delay: 5,
       },
     },
@@ -134,7 +121,6 @@ const Beams = () => {
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<WindowSize>({
     width: undefined,
-
     height: undefined,
   });
 
@@ -155,7 +141,6 @@ const useWindowSize = () => {
 };
 
 const GRID_BOX_SIZE = 32;
-
 const BEAM_WIDTH_OFFSET = 1;
 
 const Beam = ({ top, left, transition = {} }: BeamType) => {
@@ -163,28 +148,21 @@ const Beam = ({ top, left, transition = {} }: BeamType) => {
     <motion.div
       initial={{
         y: 0,
-
         opacity: 0,
       }}
       animate={{
         opacity: [0, 1, 0],
-
         y: 32 * 8,
       }}
       transition={{
         ease: "easeInOut",
-
         duration: 3,
-
         repeat: Infinity,
-
         repeatDelay: 1.5,
-
         ...transition,
       }}
       style={{
         top,
-
         left,
       }}
       className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b from-blue-500/0 to-blue-500"
@@ -194,15 +172,12 @@ const Beam = ({ top, left, transition = {} }: BeamType) => {
 
 type WindowSize = {
   width: number | undefined;
-
   height: number | undefined;
 };
 
 type BeamType = {
   top: number;
-
   left: number;
-
   transition?: AnimationProps["transition"];
 };
 
@@ -221,7 +196,6 @@ const GradientGrid = () => {
       }}
       transition={{
         duration: 2.5,
-
         ease: "easeInOut",
       }}
       className="absolute inset-0 z-0"
@@ -234,7 +208,6 @@ const GradientGrid = () => {
         }}
         className="absolute inset-0 z-0"
       />
-
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-zinc-950/0 to-orange-500" />
     </motion.div>
   );
