@@ -32,7 +32,7 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full px-6  
+      className={`font2 fixed top-0 z-50 w-full px-6  
   
         transition-all duration-300 ease-out lg:px-12
   
