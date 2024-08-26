@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { AnimationProps, motion } from "framer-motion";
 import Navbar from "./components/ui/Navbar";
 import HeroSection from "./components/ui/HeroSection";
-// import AnimatedRibbon from "./components/ui/AnimatedRibbon";
+import Categories from "./components/ui/Categories";
+import AnimatedRibbon from "./components/ui/AnimatedRibbon";
 
 function App() {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-customBg">
         <Navbar />
         <motion.div
           initial={{
@@ -24,10 +25,13 @@ function App() {
           }}
           className="relative"
         >
-          <div className="relative">
+          <div className="">
             <BackgroundWrapper>
+              {" "}
+              {/* put all elements inside this*/}
               <HeroSection />
-              {/* <AnimatedRibbon /> */}
+              <AnimatedRibbon />
+              <Categories />
             </BackgroundWrapper>
             <Beams />
           </div>
@@ -208,7 +212,7 @@ const GradientGrid = () => {
         }}
         className="absolute inset-0 z-0"
       />
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-zinc-950/0 to-orange-500" />
+      {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-zinc-950/0 to-orange-500" /> */}
     </motion.div>
   );
 };
