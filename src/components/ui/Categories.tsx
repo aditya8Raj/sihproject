@@ -10,7 +10,7 @@ import {
 const Categories = () => {
   return (
     <div className="px-4 py-16 mx-auto max-w-screen-xl">
-      <div className="max-w-xl mb-10 mx-auto text-center">
+      <div className="max-w-xl  mx-auto text-center">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Explore
