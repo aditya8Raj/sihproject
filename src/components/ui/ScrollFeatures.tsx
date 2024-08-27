@@ -8,11 +8,9 @@ import lottie3 from "../../assets/scrollLotties/animation_3.json";
 const ScrollFeatures: React.FC = () => {
   return (
     <>
-      <div className="relative h-fit z-20">
+      <div className="relative h-fit z-20 pb-20">
         <Features />
       </div>
-
-      <div className="h-[50vh] bg-white" />
     </>
   );
 };
@@ -28,7 +26,7 @@ const Features: React.FC = () => {
 
 const Copy: React.FC = () => {
   return (
-    <div className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen">
+    <div className="flex h-fit w-full flex-col justify-center md:sticky md:top-0 md:h-screen">
       <h2 className="mb-4 mt-2 text-5xl font-medium leading-tight">
         Bharat’s Biggest & Most Trusted Educational Platform
       </h2>
@@ -50,8 +48,6 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="relative w-full">
-      <Gradient />
-
       <div ref={ref} className="relative z-0 flex flex-col gap-6 md:gap-12">
         <CarouselItem
           scrollYProgress={scrollYProgress}
@@ -78,8 +74,6 @@ const Carousel: React.FC = () => {
           animationData={lottie1}
         /> */}
       </div>
-
-      <Buffer />
     </div>
   );
 };
@@ -125,11 +119,5 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
     </motion.div>
   );
 };
-
-const Gradient: React.FC = () => (
-  <div className="sticky top-0 z-10 hidden h-24 w-full bg-gradient-to-b  md:block" />
-);
-
-const Buffer: React.FC = () => <div className="h-24 w-full md:h-48" />;
 
 export default ScrollFeatures;
