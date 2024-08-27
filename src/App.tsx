@@ -4,6 +4,7 @@ import Navbar from "./components/ui/Navbar";
 import HeroSection from "./components/ui/HeroSection";
 import Categories from "./components/ui/Categories";
 import AnimatedRibbon from "./components/ui/AnimatedRibbon";
+import ScrollFeatures from "./components/ui/ScrollFeatures";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
           }}
           className="relative"
         >
-          <div className="">
+          <div className="z-20">
             <BackgroundWrapper>
               {" "}
               {/* put all elements inside this*/}
               <HeroSection />
               <AnimatedRibbon />
               <Categories />
+              <ScrollFeatures />
             </BackgroundWrapper>
             <Beams />
           </div>
