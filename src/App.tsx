@@ -5,6 +5,7 @@ import HeroSection from "./components/ui/HeroSection";
 import Categories from "./components/ui/Categories";
 import AnimatedRibbon from "./components/ui/AnimatedRibbon";
 import ScrollFeatures from "./components/ui/ScrollFeatures";
+import Testimonials from "./components/ui/Testimonials";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <AnimatedRibbon />
               <Categories />
               <ScrollFeatures />
+              <Testimonials />
             </BackgroundWrapper>
             <Beams />
           </div>
