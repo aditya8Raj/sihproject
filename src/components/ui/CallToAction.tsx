@@ -9,23 +9,23 @@ const CallToAction: React.FC = () => {
           <div className="isolate flex justify-center -space-x-2">
             <img
               className="relative z-30 inline-block h-14 w-14 rounded-full ring-4 ring-white"
-              src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
-              alt="Dan Abramov"
+              src="https://randomuser.me/api/portraits/men/39.jpg"
+              alt="Rajesh Kumar"
             />
             <img
               className="relative z-20 inline-block h-14 w-14 rounded-full ring-4 ring-white"
-              src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/smokhfs2uevnppc2bmwl"
-              alt="Guillermo Rauch"
+              src="https://randomuser.me/api/portraits/women/88.jpg"
+              alt="Anita Sharma"
             />
             <img
               className="relative z-10 inline-block h-14 w-14 rounded-full ring-4 ring-white"
-              src="https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.b1d1472f.jpg&w=256&q=75"
-              alt="Lee Robinson"
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="Vikram Singh"
             />
             <img
               className="relative z-0 inline-block h-14 w-14 rounded-full ring-4 ring-white"
-              src="https://nextjs.org/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F35255%2F1665059775-delba.jpg&w=640&q=75"
-              alt="Delba De Oliveira"
+              src="https://randomuser.me/api/portraits/women/38.jpg"
+              alt="Priya Verma"
             />
           </div>
 
