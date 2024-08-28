@@ -7,6 +7,7 @@ import AnimatedRibbon from "./components/ui/AnimatedRibbon";
 import ScrollFeatures from "./components/ui/ScrollFeatures";
 import Testimonials from "./components/ui/Testimonials";
 import Footer from "./components/ui/Footer";
+import CallToAction from "./components/ui/CallToAction";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Categories />
               <ScrollFeatures />
               <Testimonials />
+              <CallToAction />
               <Footer />
             </BackgroundWrapper>
             <Beams />
