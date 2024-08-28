@@ -8,6 +8,7 @@ import ScrollFeatures from "./components/ui/ScrollFeatures";
 import Testimonials from "./components/ui/Testimonials";
 import Footer from "./components/ui/Footer";
 import CallToAction from "./components/ui/CallToAction";
+import FaqSection from "./components/ui/FaqSection";
 
 function App() {
   return (
@@ -32,13 +33,13 @@ function App() {
           <div className="z-20">
             <BackgroundWrapper>
               {" "}
-              {/* put all elements inside this*/}
               <HeroSection />
               <AnimatedRibbon />
               <Categories />
               <ScrollFeatures />
               <Testimonials />
               <CallToAction />
+              <FaqSection />
               <Footer />
             </BackgroundWrapper>
             <Beams />
