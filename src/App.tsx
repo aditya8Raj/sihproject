@@ -6,6 +6,7 @@ import Categories from "./components/ui/Categories";
 import AnimatedRibbon from "./components/ui/AnimatedRibbon";
 import ScrollFeatures from "./components/ui/ScrollFeatures";
 import Testimonials from "./components/ui/Testimonials";
+import Footer from "./components/ui/Footer";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
               <Categories />
               <ScrollFeatures />
               <Testimonials />
+              <Footer />
             </BackgroundWrapper>
             <Beams />
           </div>
