@@ -1,19 +1,37 @@
 import { BsFacebook, BsInstagram, BsTwitterX } from "react-icons/bs";
 import logo from "../../assets/footerLogo.png";
+import footerImg from "../../assets/footerImg.png";
 
 const Footer: React.FC = () => {
   return (
     <div className="relative z-20 mt-16 bg-black text-white">
-      <svg
-        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16"
-        preserveAspectRatio="none"
-        viewBox="0 0 1440 54"
-      >
-        <path
-          fill="black"
-          d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
-        />
-      </svg>
+      {/* Fade Effect Container */}
+      <div className="relative">
+        {/* Footer Image with Gradient Overlay */}
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" />
+          <img
+            className="object-cover w-full h-full"
+            src={footerImg}
+            alt="footer-Image"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
+        </div>
+
+        {/* SVG Separator */}
+        <svg
+          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 54"
+        >
+          <path
+            fill="black"
+            d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
+          />
+        </svg>
+      </div>
+
+      {/* Footer Content */}
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
