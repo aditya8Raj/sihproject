@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             src={footerImg}
             alt="footer-Image"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70  to-transparent" />
         </div>
 
         {/* SVG Separator */}
