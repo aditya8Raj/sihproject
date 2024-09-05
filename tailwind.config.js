@@ -3,11 +3,11 @@ const { nextui } = require("@nextui-org/react");
 module.exports = {
   darkMode: ["class"],
   content: [
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -54,6 +54,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         customBg: "#faf2ef",
+        navBorder: "rgba(75, 85, 99, 0.5)",
       },
       borderRadius: {
         lg: "var(--radius)",
