@@ -1,3 +1,4 @@
+// bg-neutral-50
 import { useEffect, useState } from "react";
 import { AnimationProps, motion } from "framer-motion";
 import Navbar from "./components/ui/Navbar";
@@ -9,6 +10,8 @@ import Testimonials from "./components/ui/Testimonials";
 import Footer from "./components/ui/Footer";
 import CallToAction from "./components/ui/CallToAction";
 import FaqSection from "./components/ui/FaqSection";
+import MainCategories from "./components/ui/MainCategories";
+import PopularServices from "./components/ui/PopularServices";
 
 function App() {
   return (
@@ -35,6 +38,8 @@ function App() {
               {" "}
               <HeroSection />
               <AnimatedRibbon />
+              <MainCategories />
+              <PopularServices />
               <Categories />
               <ScrollFeatures />
               <Testimonials />
