@@ -3,20 +3,18 @@ import {
   FaChalkboardTeacher,
   FaGraduationCap,
   FaLaptopCode,
-  FaChartLine,
-  FaUsers,
 } from "react-icons/fa";
 
 const Categories = () => {
   return (
-    <div className="px-4 py-16 mx-auto max-w-screen-xl">
+    <div className="px-4 py-16 mx-auto max-w-screen-xl mt-10">
       <div className="max-w-xl  mx-auto text-center">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Explore
+          <p className="font2 inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+            ✨ GyanDrip 🧠
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 mx-auto">
+        <h2 className="max-w-lg mb-2 font1 text-3xl font-bold leading-none tracking-tight text-gray-900 mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -40,15 +38,15 @@ const Categories = () => {
                 height="24"
               />
             </svg>
-            <span className="relative">Discover</span>
+            <span className="relative">Key</span>
           </span>{" "}
-          the Features of GyaanDrip
+          Key Benefits for Students
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-lg font2">
           Unlock your potential with our comprehensive educational platform.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto mt-10">
         <div className="space-y-6">
           <div className="flex flex-row">
             <div className="mb-4 mr-4">
@@ -57,10 +55,12 @@ const Categories = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">Courses</h6>
-              <p className="text-sm text-gray-900">
-                Browse and enroll in a variety of courses to enhance your
-                knowledge and skills.
+              <h6 className="mb-3 text-xl font-bold leading-5 font1">
+                Over 50 Educational Services
+              </h6>
+              <p className="text-sm text-gray-900 font2">
+                Access a wide variety of educational services provided by expert
+                tutors and educators, tailored to your learning needs.
               </p>
             </div>
           </div>
@@ -71,26 +71,13 @@ const Categories = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">Resources</h6>
-              <p className="text-sm text-gray-900">
-                Access study materials, lecture notes, video tutorials, and
-                more.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <div className="mb-4 mr-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                <FaGraduationCap className="w-8 h-8 text-indigo-600 sm:w-10 sm:h-10" />
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Career Planning
+              <h6 className="mb-3 text-xl font-bold leading-5 font1">
+                Transparent & Flexible Pricing
               </h6>
-              <p className="text-sm text-gray-900">
-                Explore career resources, job placements, internships, and
-                mentorship programs.
+              <p className="text-sm text-gray-900 font2">
+                Choose from affordable plans, pay per service or opt for custom
+                packages. Payments are processed only when you're satisfied with
+                the results.
               </p>
             </div>
           </div>
@@ -99,46 +86,34 @@ const Categories = () => {
           <div className="flex flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                <FaGraduationCap className="w-8 h-8 text-indigo-600 sm:w-10 sm:h-10" />
+              </div>
+            </div>
+            <div>
+              <h6 className="mb-3 text-xl font-bold leading-5 font1">
+                Fast, High-Quality Learning Support
+              </h6>
+              <p className="text-sm text-gray-900 font2">
+                Quickly find qualified educators for your specific academic
+                needs and receive top-notch educational support in a timely
+                manner.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="mb-4 mr-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <FaLaptopCode className="w-8 h-8 text-indigo-600 sm:w-10 sm:h-10" />
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">Upskill</h6>
-              <p className="text-sm text-gray-900">
-                Participate in interactive learning activities, weekly
-                assessments, and skill development challenges.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <div className="mb-4 mr-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                <FaChartLine className="w-8 h-8 text-indigo-600 sm:w-10 sm:h-10" />
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Monthly Assessment
+              <h6 className="mb-3 text-xl font-bold leading-5 font1">
+                24/7 Dedicated Student Support
               </h6>
               <p className="text-sm text-gray-900">
-                Receive monthly analysis of your performance with personalized
-                feedback and suggestions.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <div className="mb-4 mr-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                <FaUsers className="w-8 h-8 text-indigo-600 sm:w-10 sm:h-10" />
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Team-Building & Collaboration
-              </h6>
-              <p className="text-sm text-gray-900">
-                Connect with peers for projects or competitions and access
-                collaboration tools.
+                Our support team is here to help you resolve issues, answer
+                queries, and ensure smooth communication with your tutors at any
+                time.
               </p>
             </div>
           </div>
