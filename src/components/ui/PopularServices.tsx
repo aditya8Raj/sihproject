@@ -54,12 +54,12 @@ const PopularServices = () => {
   };
 
   return (
-    <section className="relative z-20 mt-16" ref={ref}>
+    <section className="relative z-20 mt-20 font1" ref={ref}>
       <div className="relative overflow-hidden p-4">
         {/* CARDS */}
 
         <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-2xl font-bold font1">
+          <p className="mb-4 text-2xl font-bold ">
             Popular educational Services
           </p>
 

@@ -24,10 +24,10 @@ import Pradhan_Mantri_Kaushal_Vikas_Yojna from "../../assets/ribbon/Pradhan_Mant
 const AnimatedRibbon = () => {
   return (
     <>
-      <div className="relative z-20 mx-auto max-w-6xl px-4 md:px-8 items-center justify-center">
-        <h2 className="font-bold text-gray-600">Trusted By </h2>
+      <div className="relative z-20 mx-auto max-w-6xl px-4 md:px-8 items-center justify-center mt-10">
+        <h2 className="font-bold text-gray-600 font2">Trusted By </h2>
       </div>
-      <section className="pb-12">
+      <section className="pb-20">
         <div className="flex overflow-hidden">
           <TranslateWrapper>
             <LogoItemsTop />
