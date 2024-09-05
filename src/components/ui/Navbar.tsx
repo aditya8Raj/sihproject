@@ -32,7 +32,7 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`font2 fixed top-0 z-50 w-full px-6 transition-all duration-300 ease-out lg:px-12 ${
+      className={` border-navBorder border-b backdrop-blur-sm font2 fixed top-0 z-50 w-full px-6 transition-all duration-300 ease-out lg:px-12 ${
         scrolled
           ? "bg-white/50 backdrop-blur-md py-3 shadow-xl "
           : "bg-neutral-950/0 py-3 shadow-none"
