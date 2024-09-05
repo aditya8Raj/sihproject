@@ -54,7 +54,11 @@ const PopularServices = () => {
   };
 
   return (
-    <section className="relative z-20 mt-20 font1" ref={ref}>
+    <section
+      id="popularservices"
+      className="relative z-20 mt-20 font1"
+      ref={ref}
+    >
       <div className="relative overflow-hidden p-4">
         {/* CARDS */}
 
