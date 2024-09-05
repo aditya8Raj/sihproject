@@ -11,6 +11,7 @@ import useMeasure from "react-use-measure";
 import { SearchIcon } from "./SearchIcon";
 import { Input } from "@nextui-org/react";
 import logo from "../../assets/navLogo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -39,7 +40,9 @@ const FlyoutNav = () => {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
 
         <div className="hidden gap-6 lg:flex ">
           <Links />
@@ -133,15 +136,19 @@ const NavLink = ({
 const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
-      <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-gray-700 transition-colors hover:bg-blue-700 hover:text-white">
-        <FaUserCircle />
+      <Link to="/signin">
+        <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-gray-700 transition-colors hover:bg-blue-700 hover:text-white">
+          <FaUserCircle />
 
-        <span>Sign in</span>
-      </button>
+          <span>Sign in</span>
+        </button>
+      </Link>
 
-      <button className="rounded-lg border-2 border-blue-700 bg-blue-700 px-4 py-2 font-semibold text-black transition-colors hover:border-blue-900 hover:bg-blue-900 hover:text-white">
-        Join for Free
-      </button>
+      <Link to="/register">
+        <button className="rounded-lg border-2 border-blue-700 bg-blue-700 px-4 py-2 font-semibold text-black transition-colors hover:border-blue-900 hover:bg-blue-900 hover:text-white">
+          Join for Free
+        </button>
+      </Link>
     </div>
   );
 };
