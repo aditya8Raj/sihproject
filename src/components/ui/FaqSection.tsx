@@ -12,37 +12,46 @@ const FaqSection = () => {
         </h3>
         <Question title="What is GyaanDrip?" defaultOpen>
           <p>
-            GyaanDrip is a Smart Education platform designed to help Indian
-            students of all classes upskill through innovative learning methods,
-            courses, and resources.
+            GyaanDrip is an education-focused platform that connects students
+            with expert tutors and allows students to also become tutors
+            themselves. Whether you're looking to learn or teach, GyaanDrip
+            provides opportunities to find personalized support or offer your
+            expertise in various subjects.
           </p>
         </Question>
         <Question title="Who can benefit from GyaanDrip?">
           <p>
-            GyaanDrip is suitable for students of all ages and classes, as well
-            as professionals looking to enhance their skills in various domains
-            through our curated courses and resources.
+            Both students and aspiring educators can benefit from GyaanDrip.
+            Students can find tutoring support, test prep, or career coaching,
+            while those with expertise in specific areas can offer their skills
+            and services as tutors or mentors, building a freelancing career.
           </p>
         </Question>
         <Question title="How do I enroll in a course?">
           <p>
-            Simply browse our Courses section, select the course you're
-            interested in, and follow the enrollment instructions provided. You
-            can start learning right away!
+            To enroll, simply browse through available tutors and courses in
+            your preferred subject. Once you find the right tutor, you can book
+            a session or enroll in a course by following the simple steps
+            provided on the platform. You can also set your availability if you
+            want to become a tutor.
           </p>
         </Question>
         <Question title="What resources are available on GyaanDrip?">
           <p>
-            We offer a wide range of educational resources including video
-            tutorials, e-books, practice exams, and project-based learning
-            materials to help you excel in your studies.
+            GyaanDrip offers a variety of resources, including tutoring
+            services, test preparation, academic consulting, language learning,
+            and career coaching. As a tutor, you can access tools to create your
+            own courses, manage students, and provide personalized learning
+            experiences.
           </p>
         </Question>
         <Question title="Is there any cost associated with using GyaanDrip?">
           <p>
-            GyaanDrip offers both free and paid courses. The majority of our
-            resources are free to access, but premium content is available for a
-            nominal fee.
+            Yes, using GyaanDrip involves costs depending on the service.
+            Students pay for the courses or tutoring sessions they enroll in,
+            while tutors earn through their services. The platform offers
+            flexible pricing models, and payments are only processed once
+            students are satisfied with the service received.
           </p>
         </Question>
       </div>
