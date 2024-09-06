@@ -137,7 +137,7 @@ const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
       <Link to="/signin">
-        <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-gray-700 transition-colors hover:bg-blue-700 hover:text-white">
+        <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-700 ">
           <FaUserCircle />
 
           <span>Sign in</span>
@@ -406,7 +406,7 @@ const MobileMenu = () => {
               />
             </div>
 
-            <div className="flex justify-end bg-neutral-950 p-6">
+            <div className="flex justify-end bg-neutral-950 p-20">
               <CTAs />
             </div>
           </motion.nav>
