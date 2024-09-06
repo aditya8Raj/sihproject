@@ -406,7 +406,7 @@ const MobileMenu = () => {
               />
             </div>
 
-            <div className="flex justify-end bg-neutral-950 p-20">
+            <div className="flex justify-center bg-neutral-950 p-20">
               <CTAs />
             </div>
           </motion.nav>
