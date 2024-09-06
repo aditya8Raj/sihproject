@@ -27,7 +27,7 @@ const Form: React.FC = () => {
       <div className="mx-auto my-auto max-w-lg px-4 md:pr-0">
         <motion.h1
           variants={primaryVariants}
-          className="mb-2 text-center text-4xl font-black font1"
+          className="mb-2 text-center text-4xl font-black font1 my-10"
         >
           Create your account
         </motion.h1>
