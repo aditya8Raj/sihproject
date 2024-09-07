@@ -137,7 +137,7 @@ const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
       <Link to="/signin">
-        <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-700 ">
+        <button className="flex items-center gap-2 rounded-lg border-2 border-blue-700 px-4 py-2 font-semibold text-black transition-colors hover:bg-blue-700 ">
           <FaUserCircle />
 
           <span>Sign in</span>
