@@ -27,7 +27,7 @@ const AnimatedRibbon = () => {
       <div className="relative z-20 mx-auto max-w-6xl px-4 md:px-8 items-center justify-center mt-10">
         <h2 className="font-bold text-gray-600 font2">Trusted By </h2>
       </div>
-      <section className="pb-20">
+      <section className="pb-20 relative z-20">
         <div className="flex overflow-hidden">
           <TranslateWrapper>
             <LogoItemsTop />
@@ -80,10 +80,10 @@ const TranslateWrapper = ({
   );
 };
 
-const LogoImage = ({ src }: { src: string }) => {
+const LogoImage = ({ src, link }: { src: string; link: string }) => {
   return (
     <a
-      href="/"
+      href={link}
       rel="nofollow"
       target="_blank"
       className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-200 text-black transition-colors"
@@ -95,31 +95,37 @@ const LogoImage = ({ src }: { src: string }) => {
 
 const LogoItemsTop = () => (
   <>
-    <LogoImage src={iit} />
-    <LogoImage src={ncert} />
-    <LogoImage src={cbse} />
-    <LogoImage src={digitalIndia} />
-    <LogoImage src={skillIndia} />
-    <LogoImage src={INI} />
-    <LogoImage src={NIOS} />
-    <LogoImage src={NITTTR} />
-    <LogoImage src={NPTEL} />
-    <LogoImage src={UGC} />
+    <LogoImage src={iit} link="https://www.iit.ac.in" />
+    <LogoImage src={ncert} link="https://www.ncert.nic.in" />
+    <LogoImage src={cbse} link="https://www.cbse.gov.in" />
+    <LogoImage src={digitalIndia} link="https://www.digitalindia.gov.in" />
+    <LogoImage src={skillIndia} link="https://www.skillindia.gov.in" />
+    <LogoImage src={INI} link="https://www.ini.gov.in" />
+    <LogoImage src={NIOS} link="https://www.nios.ac.in" />
+    <LogoImage src={NITTTR} link="https://www.nitttrchd.ac.in" />
+    <LogoImage src={NPTEL} link="https://www.nptel.ac.in" />
+    <LogoImage src={UGC} link="https://www.ugc.ac.in" />
   </>
 );
 
 const LogoItemsBottom = () => (
   <>
-    <LogoImage src={betiBachaoBetiPadhao} />
-    <LogoImage src={swayam} />
-    <LogoImage src={AICTE} />
-    <LogoImage src={IGNOU} />
-    <LogoImage src={IIMB} />
-    <LogoImage src={vidyanjali} />
-    <LogoImage src={epathshalla} />
-    <LogoImage src={diksha} />
-    <LogoImage src={kvs} />
-    <LogoImage src={Pradhan_Mantri_Kaushal_Vikas_Yojna} />
+    <LogoImage
+      src={betiBachaoBetiPadhao}
+      link="https://wcd.nic.in/bbbp-scheme"
+    />
+    <LogoImage src={swayam} link="https://swayam.gov.in" />
+    <LogoImage src={AICTE} link="https://www.aicte-india.org" />
+    <LogoImage src={IGNOU} link="https://www.ignou.ac.in" />
+    <LogoImage src={IIMB} link="https://www.iimb.ac.in" />
+    <LogoImage src={vidyanjali} link="https://vidyanjali.education.gov.in" />
+    <LogoImage src={epathshalla} link="https://epathshala.nic.in" />
+    <LogoImage src={diksha} link="https://diksha.gov.in" />
+    <LogoImage src={kvs} link="https://kvsangathan.nic.in" />
+    <LogoImage
+      src={Pradhan_Mantri_Kaushal_Vikas_Yojna}
+      link="https://www.pmkvyofficial.org"
+    />
   </>
 );
 
