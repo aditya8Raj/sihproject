@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SigninPage from "./pages/SigninPage";
 import RegisterPage from "./pages/RegisterPage";
 import TutoringAcademicSupportPage from "./pages/TutoringAcademicSupportPage";
+import LanguageLearningPage from "./pages/LanguageLearningPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="/tutoring-academic-support"
             element={<TutoringAcademicSupportPage />}
           />
+          <Route path="/language-learning" element={<LanguageLearningPage />} />
         </Routes>
       </BrowserRouter>
     </>
