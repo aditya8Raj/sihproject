@@ -49,7 +49,7 @@ const WritingResearchSupport: React.FC = () => {
           </div>
           <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
             <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl font1">
-              Tutoring & Academic Support
+              Writing & Research Support
             </h5>
             <p className="mb-5 text-gray-800 font2">
               Tailored writing and research support to elevate your academic
