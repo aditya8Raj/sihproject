@@ -75,23 +75,6 @@ const Form: React.FC = () => {
             />
           </motion.div>
 
-          <motion.div variants={primaryVariants} className="mb-4 w-full">
-            <label
-              htmlFor="rt-password-input"
-              className="mb-1 inline-block text-sm font-medium font1"
-            >
-              Re-type Password<span className="text-red-600">*</span>
-            </label>
-
-            <input
-              id="rt-password-input"
-              type="password"
-              placeholder="Re-type your password"
-              className="font2 font-semibold w-full rounded border-[1px] border-slate-300 px-2.5 py-1.5 focus:outline-indigo-600"
-              required
-            />
-          </motion.div>
-
           <motion.button
             variants={primaryVariants}
             whileTap={{
