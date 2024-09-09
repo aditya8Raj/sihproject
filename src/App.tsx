@@ -6,6 +6,7 @@ import RegisterPage from "./pages/RegisterPage";
 import TutoringAcademicSupportPage from "./pages/TutoringAcademicSupportPage";
 import LanguageLearningPage from "./pages/LanguageLearningPage";
 import CareerCoachingPage from "./pages/CareerCoachingPage";
+import WritingResearchSupportPage from "./pages/WritingResearchSupportPage";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           />
           <Route path="/language-learning" element={<LanguageLearningPage />} />
           <Route path="/career-coaching" element={<CareerCoachingPage />} />
+          <Route
+            path="/writing-research-support"
+            element={<WritingResearchSupportPage />}
+          />
         </Routes>
       </BrowserRouter>
     </>
