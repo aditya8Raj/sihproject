@@ -7,6 +7,7 @@ import TutoringAcademicSupportPage from "./pages/TutoringAcademicSupportPage";
 import LanguageLearningPage from "./pages/LanguageLearningPage";
 import CareerCoachingPage from "./pages/CareerCoachingPage";
 import WritingResearchSupportPage from "./pages/WritingResearchSupportPage";
+import Resources from "./pages/ResourcesPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             path="/writing-research-support"
             element={<WritingResearchSupportPage />}
           />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </BrowserRouter>
     </>
