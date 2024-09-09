@@ -5,6 +5,7 @@ import SigninPage from "./pages/SigninPage";
 import RegisterPage from "./pages/RegisterPage";
 import TutoringAcademicSupportPage from "./pages/TutoringAcademicSupportPage";
 import LanguageLearningPage from "./pages/LanguageLearningPage";
+import CareerCoachingPage from "./pages/CareerCoachingPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             element={<TutoringAcademicSupportPage />}
           />
           <Route path="/language-learning" element={<LanguageLearningPage />} />
+          <Route path="/career-coaching" element={<CareerCoachingPage />} />
         </Routes>
       </BrowserRouter>
     </>
