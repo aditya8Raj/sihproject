@@ -98,7 +98,7 @@ const NavLink = ({
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      className="relative h-fit w-fit hover:text-red-500"
+      className="relative h-fit w-fit hover:text-red-500 font-bold"
     >
       <a href={href} className="relative">
         {children}
@@ -381,7 +381,7 @@ const MobileMenu = () => {
               </button>
             </div>
 
-            <div className="h-screen overflow-y-scroll bg-neutral-100 p-6 hover:text-red-500">
+            <div className="h-screen overflow-y-scroll bg-neutral-100 p-6 hover:text-red-500 ">
               {LINKS.map((l) => (
                 <MobileMenuLink
                   key={l.text}
