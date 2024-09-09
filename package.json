@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.5",
+    "@heroicons/react": "^2.1.5",
     "@nextui-org/card": "^2.0.33",
     "@nextui-org/react": "^2.4.6",
     "@nextui-org/system": "^2.2.5",
@@ -19,6 +21,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.2.1",
     "framer-motion": "^11.3.30",
+    "headlessui": "^0.0.0",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.435.0",
     "next-themes": "^0.3.0",
