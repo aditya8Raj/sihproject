@@ -40,7 +40,7 @@ const Categories = () => {
             </svg>
             <span className="relative">Key</span>
           </span>{" "}
-          Key Benefits for Students
+          Benefits for Students
         </h2>
         <p className="text-base text-gray-700 md:text-lg font2">
           Unlock your potential with our comprehensive educational platform.
