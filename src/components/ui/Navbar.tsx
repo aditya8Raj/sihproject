@@ -442,6 +442,6 @@ const LINKS = [
   {
     text: "Resources",
 
-    href: "#",
+    href: "/resources",
   },
 ];
