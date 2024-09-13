@@ -183,8 +183,8 @@ const AboutUsContent = () => {
           </p>
         </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/language-learning"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">Language Learning</h3>
@@ -193,10 +193,10 @@ const AboutUsContent = () => {
             Master new languages through expert-led lessons and immersive
             learning experiences.
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/career-coaching"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">Career Coaching</h3>
@@ -205,10 +205,10 @@ const AboutUsContent = () => {
             Get professional guidance for career growth, resume building, and
             interview prep.
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/writing-research-support"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">Writing & Research Support</h3>
@@ -217,10 +217,10 @@ const AboutUsContent = () => {
             Assistance with essays, research papers, editing, and academic
             writing.
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/coding-lessons"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">STEM & Coding Lessons</h3>
@@ -228,7 +228,7 @@ const AboutUsContent = () => {
           <p className="text-xs">
             Learn coding, robotics, and STEM subjects from experienced tutors.
           </p>
-        </a>
+        </Link>
 
         <a
           href="#"
