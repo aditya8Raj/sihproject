@@ -270,6 +270,41 @@ const AboutUsContent = () => {
   );
 };
 
+const UpskillSection = () => {
+  return (
+    <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
+      <div className="grid grid-cols-2 lg:grid-cols-1">
+        <div className="mb-3 space-y-3">
+          <h3>
+            <Link
+              to="#"
+              className="block hover:underline font-semibold text-lg"
+            >
+              Internship
+            </Link>
+          </h3>
+          <h3>
+            <Link
+              to="#"
+              className="block hover:underline font-semibold text-lg"
+            >
+              Job
+            </Link>
+          </h3>
+          <h3>
+            <Link
+              to="#"
+              className="block hover:underline font-semibold text-lg"
+            >
+              Connect with Alumni
+            </Link>
+          </h3>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const MobileMenuLink = ({
   children,
 
@@ -428,9 +463,11 @@ const LINKS = [
   },
 
   {
-    text: "Popular Services",
+    text: "Upskill",
 
-    href: "#popularservices",
+    href: "#",
+
+    component: UpskillSection,
   },
 
   {
