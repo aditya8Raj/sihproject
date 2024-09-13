@@ -171,8 +171,8 @@ const AboutUsContent = () => {
       </div>
 
       <div className="col-span-12 grid grid-cols-2 grid-rows-4 gap-3 bg-white p-6 lg:col-span-8">
-        <a
-          href="#"
+        <Link
+          to="/tutoring-academic-support"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">Tutoring & Academic Support</h3>
@@ -181,7 +181,7 @@ const AboutUsContent = () => {
             Personalized tutoring across subjects to enhance academic
             performance.
           </p>
-        </a>
+        </Link>
 
         <a
           href="#"
