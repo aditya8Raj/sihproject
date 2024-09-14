@@ -9,6 +9,7 @@ import CareerCoachingPage from "./pages/CareerCoachingPage";
 import WritingResearchSupportPage from "./pages/WritingResearchSupportPage";
 import Resources from "./pages/ResourcesPage";
 import CodingLessonsPage from "./pages/CodingLessonsPage";
+import TestPrepStudyResourcesPage from "./pages/TestPrepStudyResourcesPage";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
             element={<WritingResearchSupportPage />}
           />
           <Route path="/coding-lessons" element={<CodingLessonsPage />} />
+          <Route
+            path="/testprep-study-resources"
+            element={<TestPrepStudyResourcesPage />}
+          />
           <Route path="/resources" element={<Resources />} />
         </Routes>
       </BrowserRouter>
