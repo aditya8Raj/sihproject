@@ -164,10 +164,6 @@ const AboutUsContent = () => {
             Services you can take and can offer.
           </p>
         </div>
-
-        <span className="flex items-center gap-1 text-xs text-indigo-300">
-          ✨ GyaanDrip 🧠
-        </span>
       </div>
 
       <div className="col-span-12 grid grid-cols-2 grid-rows-4 gap-3 bg-white p-6 lg:col-span-8">
@@ -230,8 +226,8 @@ const AboutUsContent = () => {
           </p>
         </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/testprep-study-resources"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-200"
         >
           <h3 className="mb-1 font-semibold">Test Prep & Study Resources</h3>
@@ -240,7 +236,7 @@ const AboutUsContent = () => {
             Prep for exams like JEE, NEET, SAT, and more with tailored study
             materials.
           </p>
-        </a>
+        </Link>
 
         <a
           href="#"
