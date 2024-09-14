@@ -44,7 +44,7 @@ const items = [
     id: 6,
     title: "Test Prep. & Study Resources",
     icon: <IoLibraryOutline />,
-    link: "/test-prep-study-resources",
+    link: "/testprep-study-resources",
   },
   {
     id: 7,
