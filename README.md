@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+  <h1 align='center'>SIH project's source code</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## ⚙️ Requirements
+- Node.js : [v18.17.1 or higher](https://nodejs.org/en/download/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Steps to install
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aditya8Raj/sihproject
+   ```
+   or
+   Download the repo as ZIP and then unzip it.
 
-## Expanding the ESLint configuration
+2. Change the directory to sihproject:
+   ```bash
+   cd sihproject
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Install packages:
+   ```bash
+   npm install
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🖥️ Technologies used:
+- [React.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [NextUI](https://nextui.org/)
+- [MagicUI](https://magicui.design/)
